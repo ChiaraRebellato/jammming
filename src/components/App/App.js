@@ -44,6 +44,7 @@ function App() {
         };
 
     }, []);
+    // while testing DO NOT exclude 'useEffect' otherwise the access token won't get updated after its expiration
 
     document.getElementById("userAccount").setAttribute('href', currentUser.profile);
 
