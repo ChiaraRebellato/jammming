@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <meta name="description"
+            content="Jammming - Jam to your favorite songs" />
+        <meta name="author" description="Chiara Rebellato">
+        <title>Help page | JAMMMING </title>
+    </head>
+
+    <body class="min-vh-100">
+
+        <header id="header">
+
+            <nav class="navbar navbar-expand-md flex-grow-1" role="menu"
+                aria-label="Menu">
+                <div class="container-fluid justify-content-start">
+
+                    <a class="navbar-brand flex-grow-1 flex-md-grow-0"
+                        href="index.html"
+                        tabindex="0"
+                        target="_self"><h1 class="text-white">JAMMMING</h1></a>
+
+                    <button class="navbar-toggler border-0" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30"
+                            fill="#ffffff" class="bi bi-list"
+                            viewbox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end bg-black" tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+
+                        <div class="offcanvas-header z-3">
+                            <h5
+                                class="offcanvas-title navbar-brand text-white fs-1"
+                                id="offcanvasNavbarLabel">JAMMMING
+                            </h5>
+                            <button type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav flex-md-grow-1">
+
+                                <li class="nav-item me-3">
+                                    <a
+                                        class="nav-link text-white"
+                                        role="menuitem"
+                                        href="index.html" title="Homepage"
+                                        tabindex="0" target="_self">HOME</a>
+                                </li>
+
+                                <li class="nav-item me-3">
+                                    <a
+                                        class="nav-link text-white wave-link active text-decoration-underline link-offset-3"
+                                        role="menuitem"
+                                        aria-current="page"
+                                        href="help.html" title="Help Page"
+                                        tabindex="0" target="_self">HELP
+                                        <svg
+                                            class="d-none d-md-inline link__graphic link__graphic--slide"
+                                            width="300%" height="100%"
+                                            viewbox="0 0 1200 60"
+                                            preserveaspectratio="none">
+                                            <path
+                                                d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item flex-grow-1">
+                                    <a id="userAccount"
+                                        class="nav-link text-white"
+                                        role="menuitem"
+                                        href="#" title="Your Spotify Account"
+                                        tabindex="0" target="_blank">YOUR
+                                        ACCOUNT</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
+        </header>
+
+        <main id="helpMain">
+
+            <section id="helpSection" class="py-3">
+
+                <div class="mx-3">
+                    <h2 class="pb-2 text-center">Feelin' confused by
+                        JAMMMING?</h2>
+
+                    <p class="pb-4">JAMMMING is a web app which connects you to
+                        your Spotify account and lets you create and update new
+                        playlists thanks to the Spotify API. </p>
+
+                </div>
+
+                <h3 class="text-center">Here how it works:</h3>
+
+                <ul class="pt-1 me-4">
+                    <li class="mb-3">When you use JAMMMING you will be asked to
+                        log into your Spotify account. From here you will be
+                        able to create playlists, add and/or remove songs from
+                        them.</li>
+                    <ul class="mb-3">
+                        <li class="mb-3">You can create and modify <span
+                                class="text-decoration-underline link-offset-2">one</span>
+                            playlist at a time</li>
+                        <li>Once you modify the playlist title (e.g. from
+                            'Happy' to 'Happy ') the app will recognize it as
+                            new one, so be careful if you still want to keep
+                            working on a specific one. This means that you <span
+                                class="text-decoration-underline link-offset-2">cannot</span>
+                            update the title of a playlist you've created.</li>
+                    </ul>
+
+                    <li>Since JAMMMING doesn't manage its data with a backend system yet, if you would like to log out from your current Spotify account and use the app with a different one simply click on the 'Your account' link in the navigation bar, logout and come back to JAMMMING: you will be able to log in with a difference account.</li>
+                </ul>
+
+            </section>
+
+        </main>
+
+        <footer id="footer" class="pb-1">
+            <p class="text-center">© 2024 - Made with lots of patience by <a
+                    class="text-decoration-none text-white"
+                    href="https://chiararebellato.github.io/" tabindex="0"
+                    target="_self"
+                    title="Chiara's Portfolio"><strong>Chiara</strong></a></p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

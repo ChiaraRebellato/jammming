@@ -1,0 +1,32 @@
+input::placeholder {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+input[type='text']{
+    width: 17.7rem !important;
+}
+
+#searchBarButton:disabled img{
+    color: rgb(230, 228, 228) !important;
+}
+
+#searchBarButton {
+    position: relative;
+    float: right;
+    bottom: 2.4rem;
+    border: none;
+    background: none;
+    z-index: 5;
+}
+
+@media only screen and (min-width: 992px) {
+    input[type='text']{
+        width: 20rem !important;
+        height: 3rem !important;
+    }
+
+    #searchBarButton {
+        bottom: 2.7rem;
+    }
+}

@@ -1,0 +1,90 @@
+#songlist {
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ffffff44;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#songTitle h1 {
+    font-size: calc(15px + 0.390625vw);
+}
+
+#songTitle h2 {
+    font-size: 0.8rem;
+    line-height: 0.5rem;
+}
+
+#songTitle>span {
+    font-size: 0.7rem;
+}
+
+#addButton i:hover {
+    transition: box-shadow .3s;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+audio {
+    border-radius: 2rem;
+    border: 1px solid #f2f3f4;
+    height: 1.8rem;
+    margin-top: 0.3rem;
+    width: 107%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #f2f3f4cf !important;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+@media only screen and (min-width: 500px) {
+    audio {
+        width: 15rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #tracklist img {
+        width: 5.5rem !important;
+        height: 5.5rem !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    audio {
+        width: 18rem;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+
+    #tracklist {
+        margin-left: 1.7rem !important;
+        margin-right: 1.7rem !important;
+    }
+
+    #tracklist:first-child {
+        margin-top: 1.7rem !important;
+    }
+
+    #tracklist:last-child {
+        margin-bottom: 1.7rem !important;
+    }
+
+    #tracklist img {
+        width: 5.7rem !important;
+        height: 5.7rem !important;
+    }
+
+    #songTitle {
+        padding-left: 1rem !important;
+    }
+
+}

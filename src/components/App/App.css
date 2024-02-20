@@ -1,0 +1,107 @@
+html {
+  font-size: 16px;
+  background-color: #000000;
+}
+
+h1, h5 {
+  font-family: Coolvetica;
+}
+
+#introTitle h1 {
+  font-size: 2.3rem;
+  padding-top: 2rem;
+}
+
+#introTitle>span {
+  font-weight: 200;
+}
+
+@keyframes quiet {
+  25% {
+    transform: scaleY(.6);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(.8);
+  }
+}
+
+@keyframes normal {
+  25% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(.6);
+  }
+}
+
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  --boxSize: 5px;
+  --gutter: 4px;
+  width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.box {
+  transform: scaleY(.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: #e5f4f4;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+}
+
+.box1 {
+  animation-name: quiet;
+}
+
+.box2 {
+  animation-name: normal;
+}
+
+.box3 {
+  animation-name: quiet;
+}
+
+.box4 {
+  animation-name: loud;
+}
+
+.box5 {
+  animation-name: quiet;
+}
+
+@media only screen and (min-width: 600px) {
+  #container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+}

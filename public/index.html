@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Jammming - Jam to your favorite songs" />
+    <meta name="author" description="Chiara Rebellato">
+
+    <title>JAMMMING - Jam to your favorite songs</title>
+  </head>
+
+  <body class="min-vh-100">
+
+    <header id="header">
+
+      <nav class="navbar navbar-expand-md flex-grow-1" role="menu"
+        aria-label="Menu">
+        <div class="container-fluid justify-content-start">
+
+          <a class="navbar-brand flex-grow-1 flex-md-grow-0" aria-current="page"
+            href="index.html"
+            tabindex="0"
+            target="_self"><h1 class="text-white">JAMMMING</h1></a>
+
+          <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="#ffffff" class="bi bi-list" viewbox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </button>
+
+          <div class="offcanvas offcanvas-end bg-black" tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header z-3">
+              <h5 class="offcanvas-title navbar-brand text-white fs-1"
+                id="offcanvasNavbarLabel">JAMMMING
+              </h5>
+              <button type="button" class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-md-grow-1">
+
+                <li class="nav-item me-3">
+                  <a
+                    class="nav-link active text-white wave-link text-decoration-underline link-offset-3"
+                    role="menuitem"
+                    aria-current="page"
+                    href="#" title="Homepage"
+                    tabindex="0" target="_self">HOME
+                    <svg
+                      class="link__graphic link__graphic--slide d-none d-md-inline"
+                      width="300%" height="100%"
+                      viewbox="0 0 1200 60"
+                      preserveaspectratio="none">
+                      <path
+                        d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" role="menuitem"
+                    href="help.html" title="Help Page" tabindex="0"
+                    target="_self">HELP</a>
+                </li>
+
+                <li class="nav-item ">
+                  <a id="userAccount" class="nav-link text-white"
+                    role="menuitem"
+                    href="#" title="Your Spotify Account"
+                    tabindex="0" target="_blank">YOUR ACCOUNT</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+        <div id="root"></div>
+      </section>
+
+    </main>
+
+    <footer id="footer" class="fixed-bottom pb-1">
+      <p class="text-center">© 2024 - Made with lots of patience by <a class="text-decoration-none text-white"
+        href="https://chiararebellato.github.io/" tabindex="0" target="_self"
+        title="Chiara's Portfolio"><strong>Chiara</strong></a></p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
