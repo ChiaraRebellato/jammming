@@ -32,7 +32,7 @@ function Playlist({ currentPlaylist, handleRemoval, handlePlaylistNameChange, cu
 
                                             <div className='d-flex align-items-center mt-3 mx-2'>
 
-                                                <img src={element.artwork} className='rounded-1' width='70rem' height='70rem' />
+                                                <img src={element.artwork} className='rounded-1' width='70rem' height='70rem' alt='Album artwork' />
 
                                                 <div id='songTitle' className='flex-grow-1 ps-2'>
                                                     <h1>{element.name}</h1>

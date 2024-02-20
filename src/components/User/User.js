@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './User_module.css'
 
 function User({ currentUser }) {
