@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    min-height: 70vh;
     color: #ffffff;
     background-color: #2b0354;
     background-image: radial-gradient(at 48% 82%, hsla(248, 90%, 66%, 1) 0, hsla(248, 90%, 66%, 0) 50%),
