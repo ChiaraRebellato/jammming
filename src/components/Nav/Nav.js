@@ -71,7 +71,7 @@ function Nav({ currentUser }) {
                   <a id="userAccount" className="nav-link text-white"
                     role="menuitem"
                     href={currentUser.profile} title="Your Spotify Account"
-                    tabIndex="0" target="_blank" onClick={handleClick}>YOUR ACCOUNT</a>
+                    tabIndex="0" target="_blank" rel="noopener" onClick={handleClick}>YOUR ACCOUNT</a>
                 </li>
 
               </ul>
