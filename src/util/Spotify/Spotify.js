@@ -1,6 +1,6 @@
 let accessToken = '';
-let clientID = 'aea9ed87cc574d20bed21b68bb83567c';
-const redirectUrl = "https://jammmingcr.netlify.app";
+let clientID = 'a9030f2510764d5184317fce13640e0b';
+const redirectUrl = "http://localhost:3000";
 let redirect='';
 
 let Spotify = {
