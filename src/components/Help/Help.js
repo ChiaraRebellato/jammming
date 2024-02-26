@@ -1,4 +1,5 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
+import './Help_module.css'
 
 function Help() {
 
