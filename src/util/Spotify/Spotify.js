@@ -1,6 +1,7 @@
 let accessToken = '';
 let clientID = 'aea9ed87cc574d20bed21b68bb83567c';
-const redirectUrl = "https://jammmingcr.netlify.app";
+// const redirectUrl = "https://jammmingcr.netlify.app";
+const redirectUrl="http://localhost:3000/";
 let redirect='';
 
 let Spotify = {
@@ -165,9 +166,5 @@ let Spotify = {
 
 accessToken = Spotify.getAccessToken();
 // once 'Spotify' is imported into the app the access token is retrieved and loaded (accessToke is updated)
-
-export function greet(name) {
-  return `Hello, ${name}`;
-}
 
 export { Spotify };
